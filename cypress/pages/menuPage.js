@@ -2,10 +2,15 @@ class MenuPage {
 
     selectorsList() {
         const selectors = {
+            sectionTitleTopbar: '.oxd-topbar-header-breadcrumb-module',
             myInfoButton: '[href="/web/index.php/pim/viewMyDetails"]',
-            performanceButton: '[href="/web/index.php/performance/viewPerformanceModule"]',
-            adminButton: '[href="/web/index.php/admin/viewAdminModule"]',
-            pimButton: '[href="/web/index.php/pim/viewPimModule"]'
+            firstNameField: "[name='firstName']",
+            lastNameField: "[name='lastName']",
+            genericField: ".oxd-input--active",
+            dateField: "[placeholder='yyyy-dd-mm']",
+            dateCloseButton: ".--close",
+            submitButton: "[type='submit']",
+            countryMaritalField: "[tabindex='0']"
 
         }
         return selectors
@@ -31,6 +36,7 @@ class MenuPage {
        
 
     }
+    
 }
 
 export default MenuPage
